@@ -1,0 +1,29 @@
+.product-row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .men-section-container {
+        padding-block: 20px;
+        border: 2px solid red;
+        height: 350px;
+        width: 95vw;
+        margin: 0 auto;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        .men-section-container-item {
+            width: 200px;
+            height: 300px;
+            border: 2px solid blue;
+            margin: 25px;
+            display: inline-block;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
