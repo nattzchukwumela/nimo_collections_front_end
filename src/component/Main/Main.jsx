@@ -12,43 +12,50 @@ export const Main = () => {
                 <div className='men-section-container'>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
@@ -59,43 +66,50 @@ export const Main = () => {
                 <div className='men-section-container'>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
@@ -106,43 +120,50 @@ export const Main = () => {
                 <div className='men-section-container'>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
                     <div className='men-section-container-item'>
                         <img src={shots} alt="" />
-                        <h3>Hoodie</h3>
+                        <h3 className="product-name">Hoodie</h3>
+                        <p className='product-price'>£400</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                         <button>Add to cart</button>
                     </div>
