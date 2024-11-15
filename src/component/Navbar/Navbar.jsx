@@ -1,5 +1,5 @@
 
-import React from 'react';
+
 import search from '../../assets/icons/search-outline.svg'
 import heart from '../../assets/icons/heart-outline.svg'
 import cart from '../../assets/icons/cart-outline.svg'

@@ -5,6 +5,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: azure;
+    z-index: 1000;
+    margin-bottom: 40px;
 
     ul {
         display: flex;

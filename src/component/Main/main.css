@@ -4,18 +4,19 @@
     justify-content: space-around;
     flex-direction: column;
     margin: 40px 0;
+    background-color: #f1f1f2;
+    border-radius: 10px;
 
+    h2 {
+        margin-top: 20px;
+    }
 
     .men-section-container {
         padding-block: 20px;
         height: auto;
-        width: 95vw;
         margin: 0 auto;
-        white-space: nowrap;
-        overflow-x: auto;
-        overflow-y: hidden;
         border-radius: 10px;
-        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+        z-index: 0;
 
         .men-section-container-item {
             width: 200px;

@@ -1,0 +1,16 @@
+.main-men-section {
+    display: grid;
+    grid-template-areas: 'aside main main main';
+    gap: 15px;
+    width: 95vw;
+    margin-inline: auto;
+}
+
+.aside {
+    grid-area: aside;
+    border: 2px solid red;
+}
+
+.items-section {
+    grid-area: main;
+}

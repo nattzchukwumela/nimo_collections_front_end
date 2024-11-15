@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+
 import shots from '../../assets/products/men/hood.jpg';
 import './main.css'
 import { Navbar } from '../Navbar/Navbar';
