@@ -4,7 +4,7 @@ import './main.css'
 import { Navbar } from '../Navbar/Navbar';
 import { Footer } from '../Footer/Footer';
 export const Main = () => {
-    return (<Fragment>
+    return (<>
         <Navbar />
         <main>
             <section className='product-row men-section'>
@@ -171,6 +171,6 @@ export const Main = () => {
             </section>
         </main>
         <Footer />
-    </Fragment>
+    </>
     )
 }

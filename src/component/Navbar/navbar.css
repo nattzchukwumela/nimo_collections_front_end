@@ -13,6 +13,17 @@ header {
         list-style: none;
         gap: 20px;
         font-weight: 600;
+
+        li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            transition: 0.3s;
+
+            &:hover {
+                color: #000;
+            }
+        }
     }
 
     .search-section {

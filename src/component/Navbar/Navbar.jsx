@@ -4,20 +4,21 @@ import search from '../../assets/icons/search-outline.svg'
 import heart from '../../assets/icons/heart-outline.svg'
 import cart from '../../assets/icons/cart-outline.svg'
 import './navbar.css'
+import { Link } from 'react-router-dom';
 
 
 export function Navbar() {
     return (
         <header>
             <div className="logo">
-                <h2>Limo-Collections</h2>
+                <h2>Nimo-Collections</h2>
             </div>
             <nav>
                 <ul>
-                    <li>Men</li>
-                    <li>Women</li>
-                    <li>Children</li>
-                    <li>Latest & Trending</li>
+                    <li><Link to='/men'>Men</Link></li>
+                    <li><Link to='/women'>Women</Link></li>
+                    <li><Link to='/children'>Children</Link></li>
+                    <li><Link to='/latest'>Latest & Trending</Link></li>
                 </ul>
             </nav>
             <div className='search-section'>
