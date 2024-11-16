@@ -1,9 +1,7 @@
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import { Main } from "./component/Main/Main.jsx";
-import { Men } from "./pages/Men/Men.jsx";
-import { Women } from "./pages/Women/Woman.jsx";
-import { Children } from "./pages/Children/Children.jsx";
+import { Main as Home } from "./component/Main/Main.jsx";
+import { Shop } from "./pages/Shop/Shop.jsx";
 import { NotFound } from "./pages/404.jsx";
 import { Trending } from './pages/Trending/Trending.jsx'
 
@@ -13,10 +11,8 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/men" element={<Men />} />
-          <Route path="/women" element={<Women />} />
-          <Route path="/children" element={<Children />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
           <Route path="/trending" element={<Trending />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

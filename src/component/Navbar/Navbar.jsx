@@ -16,8 +16,8 @@ export function Navbar() {
             <nav>
                 <ul>
                     <li><Link to='/men'>Men</Link></li>
-                    <li><Link to='/women'>Women</Link></li>
-                    <li><Link to='/children'>Children</Link></li>
+                    <li><Link to='/shop'>Shop</Link></li>
+                    <li><Link to='/about-us'>About Us</Link></li>
                     <li><Link to='/latest'>Latest & Trending</Link></li>
                 </ul>
             </nav>
