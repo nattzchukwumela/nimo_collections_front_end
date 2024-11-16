@@ -1,0 +1,11 @@
+
+
+export function generateId(length) {
+    const text = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let result = '';
+
+    for (let i = 0; i < length; i++) {
+        result += text.charAt(Math.floor(Math.random() * text.length));
+    }
+    return result;
+}
