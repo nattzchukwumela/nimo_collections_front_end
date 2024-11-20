@@ -2,7 +2,7 @@
 import { Navbar } from "../../component/Navbar/Navbar";
 import { Footer } from "../../component/Footer/Footer";
 import { Aside } from "../../component/Aside/Aside";
-import { CLOTHS_DATA } from "../../db/data";
+import { CLOTHS_DATA } from "../../db/CLOTHS_DATA";
 import { ProductCard } from "../../component/ProductCard/ProductCard";
 import '../index_page.css';
 
@@ -18,6 +18,7 @@ export function Shop() {
                         {CLOTHS_DATA.men.map(item => {
                             return <ProductCard
                                 key={item.id}
+                                path={item.id}
                                 image={item.image}
                                 name={item.name}
                                 price={item.price}
@@ -31,6 +32,7 @@ export function Shop() {
                         {CLOTHS_DATA.women.map(item => {
                             return <ProductCard
                                 key={item.id}
+                                path={item.id}
                                 image={item.image}
                                 name={item.name}
                                 price={item.price}

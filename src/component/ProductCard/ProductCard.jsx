@@ -1,12 +1,15 @@
 import PropTypes from "prop-types"
+import { Link } from "react-router-dom"
 
-export const ProductCard = ({ image, name, price, description }) => {
+export const ProductCard = ({ path, image, name, price, description }) => {
     return (
         <div className='men-section-container-item'>
-            <img src={image} alt={name} />
-            <h3 className="product-name">{name}</h3>
-            <p className='product-price'>£{price}</p>
-            <p>{description}</p>
+            <Link to={`/pdp/${path}`} >
+                <img src={image} alt={name} />
+                <h3 className="product-name">{name}</h3>
+                <p className='product-price'>£{price}</p>
+                <p>{description}</p>
+            </Link>
             <button>Add to cart</button>
         </div>
     )
@@ -25,4 +28,5 @@ ProductCard.propTypes = {
     name: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     description: PropTypes.string.isRequired,
+    path: PropTypes.string.isRequired,
 }

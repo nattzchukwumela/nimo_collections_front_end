@@ -1,6 +1,7 @@
 
 
-export function generateId(length) {
+export function generateId() {
+    const length = 10;
     const text = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let result = '';
 

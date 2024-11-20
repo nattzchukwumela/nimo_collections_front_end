@@ -4,7 +4,7 @@ import './main.css'
 import { Navbar } from '../Navbar/Navbar';
 import { Footer } from '../Footer/Footer';
 import { ProductCard } from '../ProductCard/ProductCard';
-import { CLOTHS_DATA } from '../../db/data';
+import { CLOTHS_DATA } from '../../db/CLOTHS_DATA';
 export const Main = () => {
     return (<>
         <Navbar />
@@ -18,6 +18,7 @@ export const Main = () => {
                             image={item.image}
                             name={item.name}
                             price={item.price}
+                            path={item.id}
                             description={item.description}
                         />
                     })}

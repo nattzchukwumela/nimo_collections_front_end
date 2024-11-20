@@ -41,7 +41,7 @@ import womens_pleated from '../assets/products/cloth/women/womens-pleated.jpg';
 export const CLOTHS_DATA = {
     men: [
         {
-            id: idGen(5),
+            id: 'mweorg2334',
             name: 'Hoodie',
             price: 300,
             image: hoods,
@@ -49,7 +49,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: '974736bhfd',
             name: 'Mens Joggers',
             price: 360,
             image: men,
@@ -57,7 +57,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: 'nsd72378',
             name: 'Black Joggers',
             price: 30,
             image: joggers,
@@ -65,7 +65,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: 'nsd7263',
             name: 'grey Shots',
             price: 340,
             image: shot4,
@@ -73,7 +73,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: 'ndiew2434',
             name: 'Multi Color Shots',
             price: 20,
             image: shots2,
@@ -81,7 +81,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: '982err8e43r',
             name: 'Mens Top',
             price: 15,
             image: top1,
@@ -89,7 +89,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: 'mew3534',
             name: 'Long sleeved',
             price: 250,
             image: longsleeve,
@@ -97,7 +97,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: '98f8d9n',
             name: 'black sharp short',
             price: 10,
             image: shot5,
@@ -105,7 +105,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: '3j4h5hjn',
             name: 'short & top',
             price: 10,
             image: shot_top,
@@ -113,7 +113,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: 'dm345kk',
             name: 'Dynamo Hoodie',
             price: 20,
             image: hood,
@@ -121,7 +121,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: '345fdsdr3',
             name: 'Levis Shots',
             price: 10,
             image: shot3,
@@ -129,7 +129,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: 'fdgr657gr',
             name: 'Grey Thick Short',
             price: 35,
             image: shot6,
@@ -137,7 +137,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: 'er4t5',
             name: 'Black Sport Short',
             price: 15,
             image: sport,
@@ -145,7 +145,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: 'dvr454',
             name: 'Grey long Sleeved Top',
             price: 10,
             image: top3,
@@ -155,7 +155,7 @@ export const CLOTHS_DATA = {
     ],
     women: [
         {
-            id: idGen(5),
+            id: idGen(),
             name: 'Yellow Top',
             price: 10,
             image: yellow,
@@ -163,7 +163,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: idGen(),
             name: 'Bape Fashion',
             price: 20,
             image: bape_fashion,
@@ -171,7 +171,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: idGen(),
             name: 'Black Hoodie',
             price: 40,
             image: black_girl_hoodoe,
@@ -179,7 +179,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: idGen(),
             name: 'Casual Pieaces',
             price: 60,
             image: casual_pieces,
@@ -187,7 +187,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: idGen(),
             name: 'Black Hoodie',
             price: 5,
             image: crewneck,
@@ -195,7 +195,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: idGen(),
             name: 'Essential',
             price: 75,
             image: essential,
@@ -204,7 +204,7 @@ export const CLOTHS_DATA = {
 
         },
         {
-            id: idGen(5),
+            id: idGen(),
             name: 'Flared',
             price: 20,
             image: flared_skirt,
@@ -212,7 +212,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: idGen(),
             name: 'Korean Mini Skirt',
             price: 10,
             image: korean_mini_skirt,
@@ -220,7 +220,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: idGen(),
             name: 'White Sleeved Hoodie',
             price: 90,
             image: long_sleeved_white_hoodie,
@@ -228,7 +228,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: idGen(),
             name: 'Mini Skirt',
             price: 15,
             image: mini_skirt,
@@ -236,7 +236,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: idGen(),
             name: 'Pleated',
             price: 10,
             image: pleated,
@@ -244,7 +244,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: idGen(),
             name: 'Rainbow',
             price: 30,
             image: rainbow,
@@ -252,7 +252,7 @@ export const CLOTHS_DATA = {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: idGen(),
             name: 'Runner Sleeves',
             price: 44,
             image: running_sleeves,
@@ -260,7 +260,7 @@ export const CLOTHS_DATA = {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: idGen(),
             name: 'sport tights',
             price: 34,
             image: tights,
@@ -268,7 +268,7 @@ export const CLOTHS_DATA = {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: idGen(),
             name: 'Unisex Girls',
             price: 22,
             image: unisex_women,
@@ -276,7 +276,7 @@ export const CLOTHS_DATA = {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: idGen(),
             name: 'white hoodie',
             price: 5,
             image: white,
@@ -284,7 +284,7 @@ export const CLOTHS_DATA = {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: idGen(),
             name: 'Women Black Hoodie',
             price: 15,
             image: womens_black_hoodie,
@@ -292,7 +292,7 @@ export const CLOTHS_DATA = {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: idGen(),
             name: 'Womens Pleated',
             price: 55,
             image: womens_pleated,
@@ -300,7 +300,7 @@ export const CLOTHS_DATA = {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sequi! Tempora vero delectus repellat, cupiditate reprehenderit deserunt. Assumenda, mollitia rerum!`
         },
         {
-            id: idGen(5),
+            id: idGen(),
             name: 'Womens Sweatshirt',
             price: 30,
             image: flared_skirt,
