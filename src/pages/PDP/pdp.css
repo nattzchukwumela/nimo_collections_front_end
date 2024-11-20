@@ -1,0 +1,48 @@
+.pdp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.item-details,
+.pdp-image {
+    border: 2px solid red;
+    padding: 40px;
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    width: 70%;
+    gap: 10px;
+
+    .item-details {
+        h1 {
+            border: 2px solid #333;
+            font-family: 'Montserrat';
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        .btn-con {
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+
+            .btn {
+                border: 1px solid #222;
+                height: 35px;
+                border-radius: 5px;
+                background-color: rgb(119, 212, 235);
+            }
+        }
+
+    }
+}
