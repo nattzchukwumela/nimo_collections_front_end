@@ -7,10 +7,6 @@
     background-color: #f1f1f2;
     border-radius: 10px;
 
-    h2 {
-        margin-top: 20px;
-    }
-
     .men-section-container {
         padding-block: 20px;
         height: auto;
@@ -22,6 +18,11 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+
+        a {
+            text-decoration: none;
+            color: #222;
+        }
 
         .men-section-container-item {
             width: 200px;

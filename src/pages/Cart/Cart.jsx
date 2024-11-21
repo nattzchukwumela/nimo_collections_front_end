@@ -5,7 +5,7 @@ import { Navbar } from '../../component/Navbar/Navbar';
 export function Cart() {
     return (<>
         <Navbar />
-
+        cart item
         <Footer />
     </>)
 }
