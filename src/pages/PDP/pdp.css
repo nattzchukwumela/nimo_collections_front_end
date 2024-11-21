@@ -37,10 +37,33 @@
             gap: 10px;
 
             .btn {
-                border: 1px solid #222;
                 height: 35px;
-                border-radius: 5px;
-                background-color: rgb(119, 212, 235);
+                cursor: pointer;
+                font-weight: 600;
+            }
+
+            .buy-now {
+                border: 1px solid #222;
+                background-color: #77d4eb;
+            }
+
+            .add-to-cart {
+                border: 1px solid #77d4eb;
+            }
+
+            .buy-now:hover {
+                border: 1px solid #222;
+                background-color: #268aa3;
+                color: aliceblue;
+            }
+
+            .buy-now:active {
+                border: 1px solid #222;
+                background-color: #012129;
+            }
+
+            .add-to-cart:hover {
+                border: 1px solid #77d4eb;
             }
         }
 

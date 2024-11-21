@@ -1,5 +1,5 @@
 
-import { generateId as idGen } from '../utility/idGen';
+import { generateId as idGen } from '../utility/idGen/idGen';
 
 // mens cloths
 import hoods from '../assets/products/cloth/men/hood2.jpg';

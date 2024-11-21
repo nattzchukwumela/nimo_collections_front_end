@@ -17,6 +17,11 @@
         margin: 0 auto;
         border-radius: 10px;
         z-index: 0;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
 
         .men-section-container-item {
             width: 200px;
