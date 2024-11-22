@@ -3,8 +3,11 @@ import { Footer } from '../../component/Footer/Footer';
 import { Navbar } from '../../component/Navbar/Navbar';
 import './cart.css'
 import cart from '../../assets/cart/cart.jpeg'
+import { useDocumentTitle } from '../../utility/hooks/useDocumentTitle';
 
 export function Cart() {
+    useDocumentTitle('Cart - Nimo Collections');
+
     return (<>
         <Navbar />
         <section className="cart-container">

@@ -5,8 +5,12 @@ import { Aside } from "../../component/Aside/Aside";
 import { CLOTHS_DATA } from "../../db/CLOTHS_DATA";
 import { ProductCard } from "../../component/ProductCard/ProductCard";
 import '../index_page.css';
+import { useDocumentTitle } from "../../utility/hooks/useDocumentTitle";
 
 export function Shop() {
+
+    useDocumentTitle('Shop - Nimo Collections');
+
     return (<>
         <Navbar />
         <main className="main-men-section">

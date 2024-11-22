@@ -5,7 +5,11 @@ import { Navbar } from '../Navbar/Navbar';
 import { Footer } from '../Footer/Footer';
 import { ProductCard } from '../ProductCard/ProductCard';
 import { CLOTHS_DATA } from '../../db/CLOTHS_DATA';
+import { useDocumentTitle } from '../../utility/hooks/useDocumentTitle';
+
 export const Main = () => {
+
+    useDocumentTitle('Home - Nimo Collections');
 
     return (<>
         <Navbar />

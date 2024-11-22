@@ -4,6 +4,7 @@ import { Navbar } from '../../component/Navbar/Navbar';
 import { Footer } from "../../component/Footer/Footer";
 import './pdp.css'
 import { useMemo } from "react";
+import { useDocumentTitle } from "../../utility/hooks/useDocumentTitle";
 
 export function PDP() {
 
@@ -12,6 +13,8 @@ export function PDP() {
     const product = useMemo(() => {
         return CLOTHS_DATA.men.find(item => item.id === id);
     }, [id])
+
+    useDocumentTitle(`${product?.name} - Nimo Collections`);
 
     if (!product) {
         return (<>
