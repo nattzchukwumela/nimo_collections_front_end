@@ -9,6 +9,7 @@ export function Admin() {
     return (<>
         <Navbar />
         <main>
+            <h1>Admin Dashboard</h1>
             <AdminDetails />
             <section id="table-container">
                 <ProductStatus />

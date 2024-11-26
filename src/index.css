@@ -6,11 +6,8 @@
 }
 
 body {
-  overflow-x: hidden;
-}
-
-body {
   overflow-y: scroll;
+  overflow-x: hidden;
 
   /* Maintain scroll effect */
   /* Hide scrollbar */
@@ -28,5 +25,9 @@ body {
 
   &::-o-scrollbar {
     display: none;
+  }
+
+  #root {
+    height: 100vh;
   }
 }

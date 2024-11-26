@@ -1,6 +1,8 @@
 import search from '../../assets/icons/search-outline.svg'
 import heart from '../../assets/icons/heart-outline.svg'
 import cart from '../../assets/icons/cart-outline.svg'
+import user from '../../assets/icons/create-account.svg'
+
 import './navbar.css'
 import { Link } from 'react-router-dom';
 
@@ -40,6 +42,11 @@ export function Navbar() {
                 <button className='nav-btn'>
                     <Link to="/cart" aria-label="Shopping cart">
                         <img src={cart} alt="" role="presentation" width="25px" />
+                    </Link>
+                </button>
+                <button className='nav-btn'>
+                    <Link to="/login" aria-label="User authentication">
+                        <img src={user} alt="" role="presentation" width="25px" />
                     </Link>
                 </button>
             </div>
