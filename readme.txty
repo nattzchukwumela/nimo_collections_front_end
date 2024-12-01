@@ -1,1 +1,98 @@
 this version is for clothing
+import React, { useState } from 'react';
+
+const UserComponent = () => {
+  const [userData, setUserData] = useState(null);
+  const [error, setError] = useState(null);
+  const [formData, setFormData] = useState({
+    email: '',
+    name: '',
+    password: ''
+  });
+
+  // Fetch user data
+  const getUserData = async (userId) => {
+    try {
+      const response = await fetch(`http://localhost:8000/api/v1/users/${userId}/`);
+      const data = await response.json();
+      if (data.id) {
+        setUserData(data);
+      } else {
+        setError('User not found');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setError(error.toString());
+    }
+  };
+
+  // Handle form input changes
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  // Send data to the backend
+  const createUser = async () => {
+    try {
+      const response = await fetch('http://localhost:8000/api/v1/users/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      const data = await response.json();
+      if (response.ok) {
+        alert('User created successfully!');
+        setUserData(data);
+      } else {
+        alert('Error: ' + JSON.stringify(data));
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setError(error.toString());
+    }
+  };
+
+  // Example usage
+  React.useEffect(() => {
+    getUserData(1); // Replace 1 with the actual user ID you want to retrieve
+  }, []);
+
+  return (
+    <div>
+      <h1>User Data</h1>
+      {userData ? (
+        <div>
+          <p>Email: {userData.email}</p>
+          <p>Name: {userData.name}</p>
+        </div>
+      ) : (
+        <p>{error}</p>
+      )}
+
+      <h2>Create User</h2>
+      <form onSubmit={(e) => { e.preventDefault(); createUser(); }}>
+        <label>
+          Email:
+          <input type="email" name="email" value={formData.email} onChange={handleInputChange} required />
+        </label>
+        <br />
+        <label>
+          Name:
+          <input type="text" name="name" value={formData.name} onChange={handleInputChange} required />
+        </label>
+        <br />
+        <label>
+          Password:
+          <input type="password" name="password" value={formData.password} onChange={handleInputChange} required />
+        </label>
+        <br />
+        <button type="submit">Create Account</button>
+      </form>
+    </div>
+  );
+};
+
+export default UserComponent;
