@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import './signup.css';
 import { apiCreateUser } from '../../utility/api/api';
+import { AuthContext } from '../../Context/AuthContext';
 
 
 export function Signup() {
@@ -9,6 +10,8 @@ export function Signup() {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    const { login } = useContext(AuthContext)
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -33,7 +36,7 @@ export function Signup() {
                 if (response.ok) {
                     alert('User created successfully!');
                     setUserData(data);
-                    console.log(userData)
+                    login(userData)
                 } else {
                     alert('Error: ' + JSON.stringify(data));
                     console.log(error)
