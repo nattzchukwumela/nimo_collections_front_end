@@ -7,7 +7,7 @@ import { NotFound } from "./pages/404.jsx";
 import { Trending } from "./pages/Trending/Trending.jsx";
 import { PDP } from "./pages/PDP/PDP.jsx";
 import { Cart } from "./pages/Cart/Cart.jsx";
-import { Admin } from "./pages/Admin/Admin.jsx";
+import { AdminDashboard } from "./pages/Admin/Admin.jsx";
 import { Login } from "./pages/Auth/Login.jsx";
 import { Signup } from "./pages/Auth/Signup.jsx";
 
@@ -25,7 +25,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path={`/pdp/:id`} element={<PDP />} />
-          <Route path="/admin" element={<Admin />} />
+          <Route path="/admin" element={<AdminDashboard />} />
           <Route path="not-found" element={<NotFound />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
