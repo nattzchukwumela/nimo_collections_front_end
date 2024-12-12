@@ -18,7 +18,7 @@ function App() {
     <AuthProvider>
       <BrowserRouter future={{ v7_relativeSplatPath: true }}>
         <Routes>
-          <Route path="/" element={user ? <Home /> : <Login />} />
+          <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/trending" element={<Trending />} />
           <Route path="/cart" element={<Cart />} />

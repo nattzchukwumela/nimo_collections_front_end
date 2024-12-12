@@ -53,5 +53,6 @@ export function ProductStatus() {
                 </tr>
             </tbody>
         </table>
+        {}
     </section>)
 }

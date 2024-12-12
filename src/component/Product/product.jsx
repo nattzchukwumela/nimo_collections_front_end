@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { AddProduct } from "../AddProduct/AddProduct";
+import "./product.css";
+
 // Products Component
 export const Products = () => {
     const [products] = useState([
@@ -7,11 +10,16 @@ export const Products = () => {
         { id: 3, name: 'Headphones', price: 199.99, stock: 75 }
     ]);
 
+    const [addProd, setAddProd] = useState(null)
+    
     return (
+        <>
         <div className="products-content">
             <div className="products-header">
                 <h1>Product Management</h1>
-                <button className="add-product-btn">+ Add New Product</button>
+                <button type="button"
+                onClick={() => setAddProd((prevBoo) => !prevBoo)}
+                className="add-product-btn">+ Add New Product</button>
             </div>
             <table className="products-table">
                 <thead>
@@ -39,5 +47,9 @@ export const Products = () => {
                 </tbody>
             </table>
         </div>
+        <div className="add-product-modal" style={{ display: addProd ? 'block' : 'none'}}>
+           <AddProduct />
+        </div>
+        </>
     );
 };
