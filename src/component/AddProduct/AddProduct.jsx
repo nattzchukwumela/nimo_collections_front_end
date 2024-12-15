@@ -63,31 +63,30 @@ export function AddProduct() {
             
             if (response.ok) {
                 setSuccess(data);
-                setProduct(productData);
+                console.log(data);
             } else {
                 throw new Error(data.message || 'Failed to add product');
             }
         } catch(err) {
             setError(err.message);
-            console.error(err);
         } finally {
             setLoading(false);
+
         }
     }
 
     const handleChange = (e) => {
         const { name, value } = e.target;
         setProduct({ ...product, [name]: value });
-        setDescription(value);
-        console.log(product)
-        console.log(product.slug)
     }
 
-    // const handleTextArea = (e) => {
-    //     setDescription(e.target.value);
-    //     console.log(description);
-    // }
 
+   const handleTextArea = (e) => {
+        setDescription(e.target.value);
+        console.log(description);
+    }
+
+ 
     return (
         <form className="add-prod" onSubmit={handleSubmit} >
             <h2>Add Product</h2>
@@ -103,7 +102,7 @@ export function AddProduct() {
             </label>
             </div>
             <div className="form-con con2">
-            <textarea type="text" onChange={handleChange} name="description" placeholder="Description" value={description}>
+            <textarea type="text" onChange={handleTextArea} name="description" placeholder="Description" value={description}>
             </textarea>
             </div>
             <div className="form-con con3">
@@ -118,9 +117,9 @@ export function AddProduct() {
             </label>
             </div>
             <button className="btn-submit" type="submit">Add Button</button>
-            {error && <p>{error}</p>}
-            {success && <p>{success}</p>}
-            {loading && <p>Loading...</p>}
+            {error && <p style={{color: 'red'}}>{error}</p>}
+            {success && <p style={{color: 'green'}}>{success.name}</p>}
+            {loading && <p style={{color: 'yellow'}}>Loading...</p>}
             {success && !loading && <p>Product added successfully</p>}
         </form>
         )
