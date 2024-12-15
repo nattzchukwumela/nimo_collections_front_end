@@ -42,20 +42,10 @@ export function AddProduct() {
                 price: price.current.value,
                 description: description,
                 img: selectedFile,
-                slug: name.current.value.toLowerCase().replace(/\s+/g, '_'),
+                slug: name.current.value.toLowerCase().replace(/\s+/g, '-'),
                 quantity: quantity.current.value,
-                brand: {
-                    name: brand.current.value,
-                    slug: brand.current.value.toLowerCase().replace(/\s+/g, '_'),
-                    brand: 1,
-                },
-                brand_name: brand.current.value,
-                category: {
-                    name: category.current.value,
-                    slug: category.current.value.toLowerCase().replace(/\s+/g, '_'),
-                    category: 1,
-                },
-                category_name: category.current.value,
+                brand: brand.current.value,
+                category: category.current.value,
             };
     
             const formData = new FormData();
@@ -90,6 +80,7 @@ export function AddProduct() {
         setProduct({ ...product, [name]: value });
         setDescription(value);
         console.log(product)
+        console.log(product.slug)
     }
 
     // const handleTextArea = (e) => {
@@ -101,20 +92,32 @@ export function AddProduct() {
         <form className="add-prod" onSubmit={handleSubmit} >
             <h2>Add Product</h2>
             <div className="form-con con1">
-            <input type="text" onChange={handleChange} name="name" placeholder="Name" ref={name} />
-            <input type="text" onChange={handleChange} name="brand" placeholder="Brand name" ref={brand} />
-            <input type="text" onChange={handleChange} name="category" placeholder="Category" ref={category} />
+            <label htmlFor="name">
+            <input id="name" type="text" onChange={handleChange} name="name" placeholder="Name" ref={name} />
+            </label>
+            <label htmlFor="brand">
+            <input type="text" id="brand" onChange={handleChange} name="brand" placeholder="Brand name" ref={brand} />
+            </label>
+            <label htmlFor="category">
+            <input id="category" type="text" onChange={handleChange} name="category" placeholder="Category" ref={category} />
+            </label>
             </div>
             <div className="form-con con2">
             <textarea type="text" onChange={handleChange} name="description" placeholder="Description" value={description}>
             </textarea>
             </div>
             <div className="form-con con3">
-            <input type="number" onChange={handleChange} name="price" placeholder="Price" ref={price} />
+                <label htmlFor="price">
+            <input id="price" type="number" onChange={handleChange} name="price" placeholder="Price" ref={price} />
+            </label>
+            <label htmlFor="quantity">
             <input type="number" onChange={handleChange} name="quantity" placeholder="Quantity" ref={quantity} />
-            <input type="file" name="img" onChange={handleFileChange}  placeholder="Image URL" ref={img} />
+            </label>
+            <label htmlFor="img-file">
+            <input type="file" id="img-file" name="img-file" onChange={handleFileChange}  placeholder="Image URL" ref={img} />
+            </label>
             </div>
-            <button className="btn-submit" type="submit">Submit</button>
+            <button className="btn-submit" type="submit">Add Button</button>
             {error && <p>{error}</p>}
             {success && <p>{success}</p>}
             {loading && <p>Loading...</p>}
