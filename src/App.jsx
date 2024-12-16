@@ -15,8 +15,8 @@ function App() {
   const { user } = useContext(AuthContext);
 
   return (
-    <AuthProvider>
-      <BrowserRouter future={{ v7_relativeSplatPath: true }}>
+    <AuthProvider  future={{ v7_relativeSplatPath: true }}>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />

@@ -1,16 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AddProduct } from "../AddProduct/AddProduct";
 import "./product.css";
 
 // Products Component
 export const Products = () => {
-    const [products] = useState([
-        { id: 1, name: 'Laptop', price: 999.99, stock: 50 },
-        { id: 2, name: 'Smartphone', price: 599.99, stock: 30 },
-        { id: 3, name: 'Headphones', price: 199.99, stock: 75 }
-    ]);
+
+    const [items, setItems] = useState([])
+    const productApi = import.meta.env.VITE_API_GET_ALL_PRODUCTS
+    const deleteApi = import.meta.env.VITE_API_DELETE_PRODUCT
+    useEffect(() => {
+        fetch(productApi)
+        .then(res => res.json())
+        .then(data => setItems(data))
+        .catch(err => console.log(err))
+        }, [items, productApi])
 
     const [addProd, setAddProd] = useState(null)
+    
+    const handleDelete = (id) => {
+        fetch(`${deleteApi + id}/`, {
+            method: 'DELETE',
+        })
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(err => console.log(err))
+    }
     
     return (
         <>
@@ -32,15 +46,15 @@ export const Products = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {products.map(product => (
-                        <tr key={product.id}>
-                            <td>{product.id}</td>
-                            <td>{product.name}</td>
-                            <td>${product.price.toFixed(2)}</td>
-                            <td>{product.stock}</td>
+                    {items.map(item => (
+                        <tr key={item.id}>
+                            <td>{item.id}</td>
+                            <td>{item.name}</td>
+                            <td>${item.price}</td>
+                            <td>{item.quantity}</td>
                             <td>
                                 <button className="edit-btn">Edit</button>
-                                <button className="delete-btn">Delete</button>
+                                <button className="delete-btn" onClick={() => handleDelete(item.id)}>Delete</button>
                             </td>
                         </tr>
                     ))}
