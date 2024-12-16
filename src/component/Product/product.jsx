@@ -1,13 +1,18 @@
 import { useEffect, useState } from "react";
 import { AddProduct } from "../AddProduct/AddProduct";
+import { Popup } from "./popup-modal";
 import "./product.css";
 
 // Products Component
 export const Products = () => {
 
     const [items, setItems] = useState([])
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+    const [editId, setEditId] = useState(null)
     const productApi = import.meta.env.VITE_API_GET_ALL_PRODUCTS
     const deleteApi = import.meta.env.VITE_API_DELETE_PRODUCT
+    const updateApi = import.meta.env.VITE_API_GET_PRODUCT_BY_ID
+    
     useEffect(() => {
         fetch(productApi)
         .then(res => res.json())
@@ -26,6 +31,20 @@ export const Products = () => {
         .catch(err => console.log(err))
     }
     
+    
+
+    const handleEdit = (id) => {
+        fetch(`${updateApi + id}/`)
+        .then(res => res.json())
+        .then(data => setEditId(data))
+        .catch(err => console.log(err))
+        setIsPopupOpen(!isPopupOpen)
+        console.log(isPopupOpen)
+        console.log(editId)
+    }
+
+    const handlePopup = () => setIsPopupOpen(!isPopupOpen);
+
     return (
         <>
         <div className="products-content">
@@ -53,7 +72,7 @@ export const Products = () => {
                             <td>${item.price}</td>
                             <td>{item.quantity}</td>
                             <td>
-                                <button className="edit-btn">Edit</button>
+                                <button className="edit-btn" onClick={()=> handleEdit(item.id)}>Edit</button>
                                 <button className="delete-btn" onClick={() => handleDelete(item.id)}>Delete</button>
                             </td>
                         </tr>
@@ -63,6 +82,14 @@ export const Products = () => {
         </div>
         <div className="add-product-modal" style={{ display: addProd ? 'block' : 'none'}}>
            <AddProduct />
+        </div>
+        <div>
+            <Popup
+                isOpen={isPopupOpen}
+                popup={handlePopup}
+                title="Welcome"
+                data={editId}
+            />
         </div>
         </>
     );
