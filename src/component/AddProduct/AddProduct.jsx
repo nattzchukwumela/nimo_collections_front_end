@@ -116,7 +116,7 @@ export function AddProduct() {
             <input type="file" id="img-file" name="img-file" onChange={handleFileChange}  placeholder="Image URL" ref={img} />
             </label>
             </div>
-            <button className="btn-submit" type="submit">Add Button</button>
+            <button className="btn-submit" type="submit">Add Item +</button>
             {error && <p style={{color: 'red'}}>{error}</p>}
             {success && <p style={{color: 'green'}}>{success.name}</p>}
             {loading && <p style={{color: 'yellow'}}>Loading...</p>}

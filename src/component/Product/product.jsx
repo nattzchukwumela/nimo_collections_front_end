@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { AddProduct } from "../AddProduct/AddProduct";
-import { Popup } from "./popup-modal";
+import { Popup } from "./Popup";
 import "./product.css";
 
 // Products Component
@@ -87,7 +87,7 @@ export const Products = () => {
             <Popup
                 isOpen={isPopupOpen}
                 popup={handlePopup}
-                title="Welcome"
+                title={`Edit Item`}
                 data={editId}
             />
         </div>
