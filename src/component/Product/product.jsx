@@ -39,10 +39,8 @@ export const Products = () => {
         .then(data => setEditId(data))
         .catch(err => console.log(err))
         setIsPopupOpen(!isPopupOpen)
-        console.log(isPopupOpen)
-        console.log(editId)
     }
-
+   
     const handlePopup = () => setIsPopupOpen(!isPopupOpen);
 
     return (

@@ -49,7 +49,6 @@ export function AddProduct() {
             };
     
             const formData = new FormData();
-            console.log(productData);
             Object.keys(productData).forEach(key => {
                 formData.append(key, productData[key]);
             });
