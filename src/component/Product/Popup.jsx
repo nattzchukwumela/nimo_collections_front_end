@@ -68,6 +68,10 @@ export const Popup = ({ isOpen, popup, data, title }) => {
         if (imageFile) {
           formData.append('img', imageFile);
         }
+        // Append description if exists
+        if (description) {
+          formData.append('description', description);
+        }
     
     
     fetch(`${updateItem}${data?.id}/`, {

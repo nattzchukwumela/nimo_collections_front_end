@@ -15,7 +15,10 @@
         height: 300px;
     }
 }
-
+.item-details {
+    max-height: 450px;
+    overflow-y: scroll;
+}
 .grid {
     display: grid;
     grid-template-columns: 1fr 2.5fr;

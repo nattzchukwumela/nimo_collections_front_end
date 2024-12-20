@@ -6,6 +6,7 @@ export const ProductCard = ({ path, image, name, price, description }) => {
 
     const [isHovered, setIsHovered] = useState(false)
 
+
     // const onMouseOver = useEffect(() => {
     //     if (!mouseOver) {
     //         setMouseOver(true)
@@ -14,6 +15,7 @@ export const ProductCard = ({ path, image, name, price, description }) => {
     //     }
     // }, [mouseOver])
 
+   
 
     return (
         <div className='men-section-container-item'
