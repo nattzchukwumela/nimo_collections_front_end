@@ -64,11 +64,11 @@ export const CartContextProvider = (props) => {
   }, []);
 
   const addToCart = (itemId) => {
-    console.log(cart[itemId].quantity, 'from cart context addtocart button');
     setCart((prev) => ({
       ...prev,
       [itemId]: { ...prev[itemId], quantity: prev[itemId].quantity + 1 },
     }));
+    console.log(cart[itemId].quantity, 'from cart context addtocart button');
   };
 
   const removeFromCart = (itemId) => {
