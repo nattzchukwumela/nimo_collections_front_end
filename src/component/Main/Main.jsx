@@ -8,7 +8,6 @@ import { ProductCard } from '../ProductCard/ProductCard';
 import { useDocumentTitle } from '../../utility/hooks/useDocumentTitle';
 
 export const Main = () => {
-
     const items = import.meta.env.VITE_API_GET_ALL_PRODUCTS
 
     const [data, setData] = useState(null);
@@ -33,7 +32,7 @@ export const Main = () => {
         };
     
         fetchData();
-      }, []); // The empty array ensures this runs only once on mount
+      }); // The empty array ensures this runs only once on mount
     
       if (loading) {
         return <div>Loading...</div>;
@@ -59,8 +58,8 @@ export const Main = () => {
                             image={item.img}
                             name={item.name}
                             price={item.price}
-                            path={item.id}
                             description={item.description}
+                            id={item.id}
                         />
                     })}
                 </div>

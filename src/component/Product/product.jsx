@@ -68,7 +68,7 @@ export const Products = () => {
                             <td>{item.id}</td>
                             <td>{item.name}</td>
                             <td>${item.price}</td>
-                            <td>{item.quantity}</td>
+                            <td>{item.stock}</td>
                             <td>
                                 <button className="edit-btn" onClick={()=> handleEdit(item.id)}>Edit</button>
                                 <button className="delete-btn" onClick={() => handleDelete(item.id)}>Delete</button>
