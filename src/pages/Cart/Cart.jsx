@@ -4,21 +4,21 @@ import { Navbar } from '../../component/Navbar/Navbar';
 import './cart.css';
 import cartCartoon from '../../assets/cart/cart.jpeg';
 import { useDocumentTitle } from '../../utility/hooks/useDocumentTitle';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { CartContext } from '../../Context/cartContext';
 
 export function Cart() {
     useDocumentTitle('Cart - Nimo Collections');
     const { removeFromCart, updateCart, cartValues } = useContext(CartContext);
     const cartItems = cartValues.filter((item) => item.quantity > 0);
-    // const total = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
-    // const [inputValue, setInputValue] = useState(1);
-    console.log(cartItems, 'from cart page');
-    
+
+    const total = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
+
     const handleChange = (e, item) => {
         const newQuantity = parseInt(e.target.value, 10);
         updateCart(newQuantity, item.id);
     };
+
 
     return (
         <>
@@ -36,14 +36,13 @@ export function Cart() {
                             <button type="button" onClick={() => removeFromCart(item.id)}>Remove</button>
 
                             <div className="cart-quantity">
-                            <button className='btn-cart' type="button" onClick={() => updateCart(item.quantity - 1, item.id)}>-</button>
-                            <label htmlFor="cart-quantity">
-                                <input type="number" onChange={(e) => handleChange(e, item)}  value={item.quantity} id='update-quantity' />
-                            </label>
-                            <button className='btn-cart' type="button" onClick={() => updateCart(item.quantity + 1, item.id)}>+</button>
-                        </div>
-                        </div>
-                       
+                                <button className='btn-cart' type="button" onClick={() => updateCart(item.quantity - 1, item.id)}>-</button>
+                                <label htmlFor="cart-quantity">
+                                    <input type="number" onChange={(e) => handleChange(e, item)} value={item.quantity} id='update-quantity' />
+                                </label>
+                                <button className='btn-cart' type="button" onClick={() => updateCart(item.quantity + 1, item.id)}>+</button>
+                            </div>
+                        </div>    
                     </div>
                 ))
             ) : (
@@ -59,6 +58,12 @@ export function Cart() {
                     </button>
                 </section>
             )}
+            <div  style={{display: cartItems.length > 0 ? 'block' : 'none'}} className="total-cart-amount">
+                <h2>Total: £{total}</h2>
+                <button type="button" className="btn-checkout">
+                    <Link to="/checkout">Proceed to Checkout</Link>
+                </button>
+            </div>
             <Footer />
         </>
     );

@@ -10,7 +10,7 @@ import { Cart } from "./pages/Cart/Cart.jsx";
 import { AdminDashboard } from "./pages/Admin/Admin.jsx";
 import { Login } from "./pages/Auth/Login.jsx";
 import { Signup } from "./pages/Auth/Signup.jsx";
-import { CartContextProvider } from "./Context/cartContext.jsx";
+import { CartContextProvider } from "./Context/CartContextProvider.jsx";
 
 function App() {
   // const { user } = useContext(AuthContext);
