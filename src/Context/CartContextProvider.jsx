@@ -85,13 +85,11 @@ export const CartContextProvider = (props) => {
     }));
   };
 
-  const cartValues = Object.values(cart);
   const cartValue = {
     addToCart,
     removeFromCart,
     updateCart,
     cart,
-    cartValues,
   };
 
   return (

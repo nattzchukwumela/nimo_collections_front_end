@@ -4,15 +4,23 @@ import { Navbar } from '../../component/Navbar/Navbar';
 import './cart.css';
 import cartCartoon from '../../assets/cart/cart.jpeg';
 import { useDocumentTitle } from '../../utility/hooks/useDocumentTitle';
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { CartContext } from '../../Context/cartContext';
 
 export function Cart() {
     useDocumentTitle('Cart - Nimo Collections');
-    const { removeFromCart, updateCart, cartValues } = useContext(CartContext);
-    const cartItems = cartValues.filter((item) => item.quantity > 0);
+    const { removeFromCart, updateCart, } = useContext(CartContext);
+    const [cartItems, setCartItems] = useState(null)
+    // const cartItems = cartValues.filter((item) => item.quantity > 0);
 
-    const total = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
+    useEffect(() => {
+        const cartData = localStorage.getItem('cart');
+        const parsedCart = JSON.parse(cartData);
+        const cart = Object.values(parsedCart);
+        setCartItems(cart)
+    }, [setCartItems])
+
+    const total = cartItems && cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
     const handleChange = (e, item) => {
         const newQuantity = parseInt(e.target.value, 10);
@@ -23,7 +31,7 @@ export function Cart() {
     return (
         <>
             <Navbar />
-            {cartItems.length > 0 ? (
+            {cartItems && cartItems.length > 0 ? (
                 cartItems.map((item) => (
                     <div key={item.id} className="cart-container" style={{ display: 'flex', gap: '1rem' }}>
                         <div className="cart-image">
@@ -58,12 +66,14 @@ export function Cart() {
                     </button>
                 </section>
             )}
-            <div  style={{display: cartItems.length > 0 ? 'block' : 'none'}} className="total-cart-amount">
+           {cartItems && (
+            <div className="total-cart-amount">
                 <h2>Total: £{total}</h2>
                 <button type="button" className="btn-checkout">
                     <Link to="/checkout">Proceed to Checkout</Link>
                 </button>
             </div>
+           )}
             <Footer />
         </>
     );
